@@ -47,4 +47,13 @@ nav.pages a { display: block; background: var(--card); border: 1px solid var(--r
 nav.pages a span { display: block; color: var(--ink-2); font-size: 0.95rem; }
 footer { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem 3rem; font-size: 0.9rem; color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 1.25rem; }
 footer a { margin-right: 1rem; }
+p.store { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 1.5rem 0 0; }
+p.store a { display: inline-block; line-height: 0; border-radius: 9px; }
+p.store img { width: 150px; height: auto; }
+p.store span { font-size: 0.95rem; }
+/* The videos scroll sideways inside their own row, so the page itself never does. */
+.shorts { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 34%); gap: 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.75rem; margin: 1rem 0 0; }
+.shorts figure { margin: 0; scroll-snap-align: start; }
+.shorts video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 14px; background: #1e1e1e; border: 1px solid var(--rule); }
+.shorts figcaption { font-size: 0.9rem; color: var(--ink-2); margin-top: 0.4rem; }
 ::selection { background: #b3f6ce; color: #1b2a20; }
